@@ -1,0 +1,596 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 4.6em 155.1em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.am:before {
+      background-position: 0em 0em;
+      width: 4.6em;
+      height: 3.9850000000000003em;
+  }
+
+
+
+
+  .icon.blizzard-grey:before {
+      background-position: 0em -4em;
+      width: 3em;
+      height: 3em;
+  }
+
+
+
+
+  .icon.blizzard-white:before {
+      background-position: 0em -7em;
+      width: 3em;
+      height: 3em;
+  }
+
+
+
+
+  .icon.clear_day-grey:before {
+      background-position: 0em -10em;
+      width: 2.8em;
+      height: 2.8em;
+  }
+
+
+
+
+  .icon.clear_day-white:before {
+      background-position: 0em -12.8em;
+      width: 2.8em;
+      height: 2.8em;
+  }
+
+
+
+
+  .icon.clear_night:before {
+      background-position: 0em -15.6em;
+      width: 2.8em;
+      height: 2.8em;
+  }
+
+
+
+
+  .icon.clear_night-white:before {
+      background-position: 0em -18.4em;
+      width: 2.8em;
+      height: 2.8em;
+  }
+
+
+
+
+  .icon.cloud-sm-blue:before {
+      background-position: 0em -21.2em;
+      width: 3em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.cloud-sm-white:before {
+      background-position: 0em -23.2em;
+      width: 3em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.cloudy-grey:before {
+      background-position: 0em -25.2em;
+      width: 3em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.cloudy-white:before {
+      background-position: 0em -27.2em;
+      width: 1.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.facebook:before {
+      background-position: 0em -29em;
+      width: 0.8em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.feels-like:before {
+      background-position: 0em -30.6em;
+      width: 1em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.fog-grey:before {
+      background-position: 0em -32.8em;
+      width: 3em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.fog-white:before {
+      background-position: 0em -34.6em;
+      width: 3em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.freezing_fog-grey:before {
+      background-position: 0em -36.4em;
+      width: 3em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.freezing_fog-white:before {
+      background-position: 0em -38.6em;
+      width: 3em;
+      height: 2.2em;
+  }
+
+
+
+
+  .icon.google:before {
+      background-position: 0em -40.8em;
+      width: 2.3em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.humidity:before {
+      background-position: 0em -42.3em;
+      width: 1.2em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.ice_pellets_showers-grey:before {
+      background-position: 0em -44.3em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.ice_pellets_showers-white:before {
+      background-position: 0em -46.7em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.ice_pellets_showers_heavy-grey:before {
+      background-position: 0em -49.1em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.ice_pellets_showers_heavy-white:before {
+      background-position: 0em -51.5em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.location:before {
+      background-position: 0em -53.9em;
+      width: 1.4em;
+      height: 2.1em;
+  }
+
+
+
+
+  .icon.mist-grey:before {
+      background-position: 0em -56em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.mist-white:before {
+      background-position: 0em -58.4em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.partly_cloudy_day-grey:before {
+      background-position: 0em -60.8em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.partly_cloudy_day-white:before {
+      background-position: 0em -63.2em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.partly_cloudy_night-grey:before {
+      background-position: 0em -65.6em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.partly_cloudy_night-white:before {
+      background-position: 0em -68em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.pm:before {
+      background-position: 0em -70.4em;
+      width: 4.6em;
+      height: 4.8em;
+  }
+
+
+
+
+  .icon.rain_freezing-grey:before {
+      background-position: 0em -75.2em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.rain_freezing-white:before {
+      background-position: 0em -77.6em;
+      width: 3em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.rain_freezing_heavy-grey:before {
+      background-position: 0em -80em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_freezing_heavy-white:before {
+      background-position: 0em -82.6em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_heavy-grey:before {
+      background-position: 0em -85.2em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_heavy-white:before {
+      background-position: 0em -87.8em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_heavy_patchy_cloudy-grey:before {
+      background-position: 0em -90.4em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_heavy_patchy_cloudy-white:before {
+      background-position: 0em -93em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_heavy_patchy_day-grey:before {
+      background-position: 0em -95.6em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_heavy_patchy_day-white:before {
+      background-position: 0em -98.2em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_heavy_patchy_night-grey:before {
+      background-position: 0em -100.8em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_heavy_patchy_night-white:before {
+      background-position: 0em -103.4em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_light-grey:before {
+      background-position: 0em -106em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_light-white:before {
+      background-position: 0em -108.6em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_light_patchy_cloudy-grey:before {
+      background-position: 0em -111.2em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_light_patchy_cloudy-white:before {
+      background-position: 0em -113.8em;
+      width: 2.7em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_light_patchy_day-grey:before {
+      background-position: 0em -116.4em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_light_patchy_day-white:before {
+      background-position: 0em -119em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_light_patchy_night-grey:before {
+      background-position: 0em -121.6em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_light_patchy_night-white:before {
+      background-position: 0em -124.2em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_moderate-grey:before {
+      background-position: 0em -126.8em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_moderate-white:before {
+      background-position: 0em -129.4em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_moderate_patchy_cloudy-grey:before {
+      background-position: 0em -132em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_moderate_patchy_cloudy-white:before {
+      background-position: 0em -134.6em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_moderate_patchy_day-grey:before {
+      background-position: 0em -137.2em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_moderate_patchy_day-white:before {
+      background-position: 0em -139.8em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_moderate_patchy_night-grey:before {
+      background-position: 0em -142.4em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.rain_moderate_patchy_night-white:before {
+      background-position: 0em -145em;
+      width: 2.8em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.settings:before {
+      background-position: 0em -147.6em;
+      width: 1.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.share:before {
+      background-position: 0em -149.4em;
+      width: 1.5em;
+      height: 1.7em;
+  }
+
+
+
+
+  .icon.twitter:before {
+      background-position: 0em -151.1em;
+      width: 1.7em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.vk:before {
+      background-position: 0em -152.6em;
+      width: 1.9em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.youtube:before {
+      background-position: 0em -153.8em;
+      width: 1.8em;
+      height: 1.3em;
+  }
+
+
+
+
+

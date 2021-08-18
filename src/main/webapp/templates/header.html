@@ -1,0 +1,124 @@
+<header>
+    <div class="blur">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-banner"></div>
+            </div>
+        </div><!-- end header-top -->
+    </div>
+    <div class="header-bot" id="fix-menu">
+        <div class="container">
+            <a href="/{{currentCountryCode}}/weather/{{selectedCity}}" class="h-logo"><img src="images/icons/logo.png" alt="img"></a>
+
+            <div class="header-bot-right" >
+
+                <a id="nav-toggle" href="#"><span></span><em></em></a>
+
+                <div class="temp-wrap">
+                    <div ng-if="local.typeTemp !== 'F'" class="temp-block tmp-cel"  ng-click="local.typeTemp = 'F'; updateTemp(local.typeTemp);">°F</div>
+                    <div ng-if="local.typeTemp !== 'C'" class="temp-block tmp-cel"  ng-click="local.typeTemp = 'C'; updateTemp(local.typeTemp);">°C</div>
+
+                    <div ng-if="local.typeTemp == 'F'" class="temp-block tmp-far active active-mob">°F</div>
+                    <div ng-if="local.typeTemp == 'C'" class="temp-block tmp-far active active-mob">°C</div>
+                </div><!-- end temp-wrap -->
+
+                <div id="h-share">
+                    <a href="#">
+                        <span class="helper"></span>
+                        <i class="icon share"></i>
+                    </a>
+                    <ul>
+                        <li><a href="#">
+                            <span class="helper"></span>
+                            <i class="icon vk"></i>
+                        </a></li>
+                        <li>
+                            <a href="http://www.facebook.com/sharer.php?u=http://192.168.0.102:8080/" target="_blank">
+                                <span class="helper"></span>
+                                <i class="icon facebook"></i>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <span class="helper"></span>
+                            <i class="icon twitter"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="helper"></span>
+                            <i class="icon google"></i>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div id="h-share" class="h-lang">
+                    <a>
+                        <span class="helper"></span>
+                        <i>{{currentCountryCode}}</i>
+                    </a>
+                    <ul>
+                       <li><a ng-click="selectLanguage('en')" ng-class="{active:currentCountryCode == 'en'}">En</a></li>
+                       <li><a ng-click="selectLanguage('ru')" ng-class="{active:currentCountryCode == 'ru'}">Ru</a></li>
+                       <li><a ng-click="selectLanguage('de')" ng-class="{active:currentCountryCode == 'de'}">De</a></li>
+                       <li><a ng-click="selectLanguage('fr')" ng-class="{active:currentCountryCode == 'fr'}">Fr</a></li>
+                       <li><a ng-click="selectLanguage('it')" ng-class="{active:currentCountryCode == 'it'}">It</a></li>
+                       <li><a ng-click="selectLanguage('ua')" ng-class="{active:currentCountryCode == 'ua'}">Ua</a></li>
+                       <li><a ng-click="selectLanguage('by')" ng-class="{active:currentCountryCode == 'by'}">By</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="h-settings">
+                    <a href="#settings-popup" data-effect="mfp-zoom-in" class="s-popup"><span class="helper"></span><i
+                            class="icon settings"></i></a>
+                </div>
+
+                <nav id="h-menu">
+                    <ul>
+                        <li><a href="/{{currentCountryCode}}/weather/widgets" ng-bind="pageContent.widgets"></a></li>
+                        <li><a href="/{{currentCountryCode}}/weather/outlook/{{selectedCity}}" ng-bind="pageContent.weather"></a></li>
+                        <li><a href="/{{currentCountryCode}}/weather/map/{{selectedCity}}" ng-bind="pageContent.temperatureMap"></a></li>
+                        <li><a href="#alert-popup" data-effect="mfp-zoom-in" class="a-popup" ng-bind="pageContent.alerts"><span></span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div><!-- end container -->
+
+        <div id="main-menu">
+            <div class="container">
+                <div class="main-menu-inner">
+                    <nav class="main-menu-block">
+                        <h3 ng-bind="pageContent.weather"></h3>
+                        <ul>
+                            <li><a href="/{{currentCountryCode}}/weather/3/{{selectedCity}}" ng-bind="pageContent.threeDaysWeatherForecast"></a></li>
+                            <li><a href="/{{currentCountryCode}}/weather/5/{{selectedCity}}" ng-bind="pageContent.fiveDaysWeatherForecast"></a></li>
+                            <li><a href="/{{currentCountryCode}}/weather/7/{{selectedCity}}" ng-bind="pageContent.sevenDaysWeatherForecast"></a></li>
+                            <li><a href="/{{currentCountryCode}}/weather/14/{{selectedCity}}" ng-bind="pageContent.fourteenDaysWeatherForecast"></a></li>
+                            <li><a href="/{{currentCountryCode}}/weather/hour-by-hour3/{{selectedCity}}" ng-bind="pageContent.hourlyWeather"></a></li>
+                            <li><a href="/{{currentCountryCode}}/weather/map/{{selectedCity}}" ng-bind="pageContent.weatherMap"></a></li>
+                            <li><a href="/{{currentCountryCode}}/weather/history3/{{selectedCity}}" ng-bind="pageContent.weatherHistory"></a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="main-menu-block">
+                        <h3 ng-bind="pageContent.applications"></h3>
+                        <ul>
+                            <li><a href="https://chrome.google.com/webstore/detail/oplao-weather/jbjeihiakbjchgaehgcilindlghfffnb" ng-bind="pageContent.googleChromeWeatherExtension"></a></li>
+                            <li><a href="https://addons.mozilla.org/en-US/firefox/addon/oplao-weather/" ng-bind="pageContent.firefoxWeatherExtension"></a></li>
+                            <li><a href="https://addons.opera.com/en/extensions/details/oplao-weather/" ng-bind="pageContent.operaWeatherExtension"></a></li>
+                            <li><a href="/{{currentCountryCode}}/weather/widgets" ng-bind="pageContent.widgets"></a></li>
+
+                        </ul>
+                    </nav>
+
+                    <nav class="main-menu-block">
+                        <h3 ng-bind="pageContent.information"></h3>
+                        <ul>
+                            <!--<li><a href="/{{currentCountryCode}}/about"></a></li>-->
+                            <li><a href="https://blog.oplao.com/">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div><!-- end main-menu -->
+    </div><!-- end header-bot -->
+</header>

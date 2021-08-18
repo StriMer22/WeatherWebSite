@@ -1,0 +1,50 @@
+                <section id="glance">
+
+                    <h2 ng-bind="pageContent.weeklyWeatherSummary"></h2>
+                    <div class="glance-row">
+                        <div class="glance-left" ng-bind="pageContent.maxTemperature"></div>
+                        <div class="glance-right">
+                            <div class="glance-temp">{{local.typeTemp=='C'?weekly_weather_summary.maxTempC:weekly_weather_summary.maxTempF}}°{{local.typeTemp}}</div>
+                            <div class="glance-date">{{weekly_weather_summary.maxTempDay}}</div>
+                        </div>
+                    </div>
+                    <div class="glance-row">
+                        <div class="glance-left" ng-bind="pageContent.minTemperature"></div>
+                        <div class="glance-right">
+                            <div class="glance-temp">{{local.typeTemp=='C'?weekly_weather_summary.minTempC:weekly_weather_summary.minTempF}}°{{local.typeTemp}}</div>
+                            <div class="glance-date">{{weekly_weather_summary.minTempDay}}</div>
+                        </div>
+                    </div>
+                    <div class="glance-row">
+                        <div class="glance-left" ng-bind="pageContent.averageMaxTemperature"></div>
+                        <div class="glance-right">
+                            <div class="glance-temp">{{local.typeTemp=='C'?weekly_weather_summary.avgMaxTempC:weekly_weather_summary.avgMaxTempF}}°{{local.typeTemp}}</div>
+                            <div class="glance-date" ng-bind="pageContent.next7Days"></div>
+                        </div>
+                    </div>
+                    <div class="glance-row">
+                        <div class="glance-left" ng-bind="pageContent.averageMinTemperature"></div>
+                        <div class="glance-right">
+                            <div class="glance-temp">{{local.typeTemp=='C'?weekly_weather_summary.avgMinTempC:weekly_weather_summary.avgMinTempF}}°{{local.typeTemp}}</div>
+                            <div class="glance-date" ng-bind="pageContent.next7Days"></div>
+                        </div>
+                    </div>
+                    <div class="glance-row">
+                        <div class="glance-left" ng-bind="pageContent.totalRainfall"></div>
+                        <div class="glance-right">
+
+                            <div class="glance-temp">{{local.typeTemp=='C'?weekly_weather_summary.totalRainfallMM.toFixed(1) : weekly_weather_summary.totalRainfallInch.toFixed(1);}}  {{local.typeTemp=='C'?'MM':'In'}}</div>
+
+                            <div class="glance-date" ng-bind="pageContent.next7Days"></div>
+                        </div>
+                    </div>
+                    <div class="glance-row">
+                        <div class="glance-left" ng-bind="pageContent.windiest"></div>
+                        <div class="glance-right">
+                            <div class="glance-temp">{{local.typeTemp=='C'?weekly_weather_summary.windiestMS :weekly_weather_summary.windiestMiles}} {{local.typeTemp=='C'?pageContent.ms:pageContent.mph}}</div>
+                            <div class="glance-date">{{weekly_weather_summary.windiestDay}}</div>
+                        </div>
+                    </div>
+
+
+                </section><!-- end glance -->

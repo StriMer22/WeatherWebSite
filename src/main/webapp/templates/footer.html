@@ -1,0 +1,146 @@
+
+<div class="main-bot-banner">
+    AD 729x90
+</div>
+
+<section id="weather-extensions">
+    <div class="container">
+        <h2 ng-bind="pageContent.oplaoWeatherExtension"></h2>
+    </div>
+    <div class="ext-row">
+        <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/oplao-weather/" class="ext-block">
+            <img src="images/svg-icons/firefox.svg" alt="img">
+            <h3>Firefox</h3>
+        </a>
+        <a target="_blank"  href="https://chrome.google.com/webstore/detail/oplao-weather/jbjeihiakbjchgaehgcilindlghfffnb" class="ext-block">
+            <img src="images/svg-icons/crome.svg" alt="img">
+            <h3>Chrome</h3>
+        </a>
+        <a target="_blank"  href="https://addons.opera.com/en/extensions/details/oplao-weather/" class="ext-block">
+            <img src="images/svg-icons/opera.svg" alt="img">
+            <h3>Opera</h3>
+        </a>
+        <a target="_blank"  href="https://addons.opera.com/en/extensions/details/oplao-weather/" class="ext-block">
+            <img src="images/svg-icons/yandex.svg" alt="img">
+            <h3>yandex</h3>
+        </a>
+    </div>
+</section><!-- end "weather-extensions -->
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="main-menu-inner">
+                <nav class="main-menu-block">
+                    <h3 ng-bind="pageContent.weather"></h3>
+                    <ul>
+                        <li><a href="/{{currentCountryCode}}/weather/3/{{selectedCity}}" ng-bind="pageContent.threeDaysWeatherForecast"></a></li>
+                        <li><a href="/{{currentCountryCode}}/weather/5/{{selectedCity}}" ng-bind="pageContent.fiveDaysWeatherForecast"></a></li>
+                        <li><a href="/{{currentCountryCode}}/weather/7/{{selectedCity}}" ng-bind="pageContent.sevenDaysWeatherForecast"></a></li>
+                        <li><a href="/{{currentCountryCode}}/weather/14/{{selectedCity}}" ng-bind="pageContent.fourteenDaysWeatherForecast"></a></li>
+                        <li><a href="/{{currentCountryCode}}/weather/hour-by-hour3/{{selectedCity}}" ng-bind="pageContent.hourlyWeather"></a></li>
+                        <li><a href="/{{currentCountryCode}}/weather/map/{{selectedCity}}" ng-bind="pageContent.weatherMap"></a></li>
+                        <li><a href="/{{currentCountryCode}}/weather/history3/{{selectedCity}}" ng-bind="pageContent.weatherHistory"></a></li>
+                    </ul>
+                </nav>
+
+                <nav class="main-menu-block">
+                    <h3 ng-bind="pageContent.applications"></h3>
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/developer?id=Oplao" ng-bind="pageContent.androidApps"></a></li>
+                        <li><a href="https://chrome.google.com/webstore/detail/oplao-weather/jbjeihiakbjchgaehgcilindlghfffnb" ng-bind="pageContent.googleChromeWeatherExtension"></a></li>
+                        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/oplao-weather/" ng-bind="pageContent.firefoxWeatherExtension"></a></li>
+                        <li><a href="https://addons.opera.com/en/extensions/details/oplao-weather/" ng-bind="pageContent.operaWeatherExtension"></a></li>
+                        <li><a href="/{{currentCountryCode}}/weather/widgets" ng-bind="pageContent.widgets"></a></li>
+                    </ul>
+                </nav>
+
+                <nav class="main-menu-block">
+                    <h3 ng-bind="pageContent.information"></h3>
+                    <ul>
+                        <!--<li><a href="/{{currentCountryCode}}/about" ng-bind="pageContent.about"></a></li>-->
+                        <li><a href="https://blog.oplao.com/" ng-bind="pageContent.blog"></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav class="footer-soc">
+                <a class="doorbell-button"  onclick="showDoorbellModal();"><img src="images/svg-icons/feedback.svg" alt=""><em ng-bind="pageContent.feedback"></em></a>
+                <a target="_blank" href="https://vk.com/oplao"><i class="icon vk" style="border: none;"></i></a>
+                <a target="_blank" href="https://www.facebook.com/Oplao"><i class="icon facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/Oplaoweather"><i class="icon twitter"></i></a>
+                <a target="_blank" href="https://plus.google.com/u/0/b/111062725555627000569/+Oplaoweather/posts"><i class="icon google"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UC1rtXk9LSRD-pJb253pN0lg"><i class="icon youtube"></i></a>
+            </nav>
+        </div>
+    </div><!-- end footer-top -->
+    <div class="footer-bot">
+        2016. Oplao, All right reserved
+    </div>
+</footer>
+
+
+<!-- Popup -->
+<div id="alert-popup" class="alert-popup mfp-with-anim mfp-hide">
+    <div class="alert-popup-top">
+        <div class="apt-left">Alerts</div>
+    </div>
+    <div class="alert-popup-bot">
+        <h2>Severity</h2>
+        <div class="severity-block"></div>
+        <h2>Text Weather</h2>
+        <p>The <em>maximum temperature</em> for Brighton over the next 7 day will be 30°C(or 86°F) on Wednesday 24th
+            August at around 5 pm. In the same week the <em>minimum temperature</em> will be 13°C (or 56°F) on
+            Tuesday 23rd August at around 5 am. Our Brighton weather forecaster is reporting Thursday 25th August to
+            be the wettest day in the coming week with around 2.70mm (or 0.1 inches) of rainfall. Make sure to carry
+            an umbrella if you are out and about in Brighton.</p>
+        <a href="#settings-popup" data-effect="mfp-zoom-in" class="alert-settings s-popup">Settings
+            <span></span></a>
+    </div><!-- end alert-popup-bot -->
+</div>
+<!-- Popup -->
+<div id="settings-popup" class="settings-popup mfp-with-anim mfp-hide">
+    <div class="settings-popup-top">
+        <div class="spt-left" ng-bind="pageContent.settings"></div>
+    </div>
+    <div class="settings-popup-md">
+        <div class="popup-lang-wrap">
+            <h2 ng-bind="pageContent.language"></h2>
+            <ul class="popup-lang">
+                <li><a ng-click="selectLanguage('en')" ng-class="{active:currentCountryCode == 'en'}">En</a></li>
+                <li><a ng-click="selectLanguage('ru')" ng-class="{active:currentCountryCode == 'ru'}">Ru</a></li>
+                <li><a ng-click="selectLanguage('de')" ng-class="{active:currentCountryCode == 'de'}">De</a></li>
+                <li><a ng-click="selectLanguage('fr')" ng-class="{active:currentCountryCode == 'fr'}">Fr</a></li>
+                <li><a ng-click="selectLanguage('it')" ng-class="{active:currentCountryCode == 'it'}">It</a></li>
+                <li><a ng-click="selectLanguage('ua')" ng-class="{active:currentCountryCode == 'ua'}">Ua</a></li>
+                <li><a ng-click="selectLanguage('by')" ng-class="{active:currentCountryCode == 'by'}">By</a></li>
+            </ul>
+        </div>
+
+        <div class="set-popup-row">
+            <div class="spr-block popup-units">
+                <h2 ng-bind="pageContent.unitsPreference"></h2>
+                <a href="#" class="spr-item" ng-class="{active:local.typeTemp == 'C'}" ng-click="local.typeTemp = 'C'; updateTemp(local.typeTemp);">°C</a>
+                <a href="#" class="spr-item" ng-class="{active:local.typeTemp == 'F'}" ng-click="local.typeTemp = 'F'; updateTemp(local.typeTemp);">°F</a>
+            </div>
+            <div class="spr-block popup-time">
+                <h2 ng-bind="pageContent.timeFormat"></h2>
+                <a href="#" class="spr-item" ng-class="{active:local.typeTime == 12}" ng-click="local.typeTime = 12; updateTime(local.typeTime);" ng-bind="pageContent.twelveHours"></a>
+                <a href="#" class="spr-item" ng-class="{active:local.typeTime == 24}" ng-click="local.typeTime = 24; updateTime(local.typeTime);" ng-bind="pageContent.twentyFourHours"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="set-pop-bot">
+        <div class="alerts_block">
+            <div class="alerts_text" ng-bind="pageContent.alerts"></div>
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

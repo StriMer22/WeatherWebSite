@@ -1,0 +1,33 @@
+<section id="detailed-tabs-wrap" ng-init="getDataGraph()">
+    <div class="container padding-bottom">
+        <h2 ng-bind="pageContent.aboveGraph"></h2>
+    </div>
+
+    <div class="tb-wrapper">
+        <div class="wather-table-wrap">
+            <div class="active tab-forecast-content blue-bg">
+                <div class="container ">
+                    <div id="{{graph}}"></div>
+                    <br/>
+                    <div id="{{graph}}Icon">
+                        <div class="wrp-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tb-more-info more-col-4">
+            <div class="text">
+                <span>Swipe</span>
+                <span>FOR</span>
+                <span>MORE</span>
+                <span>INFO</span>
+            </div>
+        </div>
+        <a href="https://www.highcharts.com/" target="_blank" style="position: absolute;
+                                                                         bottom: 10px;
+                                                                         font-size: 9px;
+                                                                         right: 7px;
+                                                                         color: #6cc8ff;">highcharts.com</a>
+    </div>
+
+</section><!-- end detailed-forecast -->

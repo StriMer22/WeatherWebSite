@@ -1,0 +1,137 @@
+#page_404 {
+  display: block;
+  position: relative;
+  background: url("../img/404_bg.jpg") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 130px;
+  color: #fff;
+  font-size: 26px;
+  line-height: 37px;
+  font-weight: 100; }
+  #page_404 .inner {
+    display: block;
+    position: relative;
+    max-width: 397px;
+    margin: 0 auto;
+    padding-top: 178px; }
+  #page_404 .logo_big {
+    width: 286px;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: 1; }
+  #page_404 .weather_now {
+    display: block;
+    position: absolute;
+    top: 161px;
+    right: -9px;
+    z-index: 2; }
+    #page_404 .weather_now img {
+      width: 42px; }
+  #page_404 .box_404 {
+    display: block;
+    position: relative;
+    -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.3);
+    clip-path: polygon(217px 0, 100% 0, 100% 100%, 0 100%, 0 74px);
+    padding: 48px 40px 158px 40px;
+    text-align: center; }
+  #page_404 .sorry_text {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: right; }
+  #page_404 .main_text_404 {
+    font-size: 194px;
+    line-height: 176px;
+    font-weight: 500;
+    text-shadow: -10px 5px 1px #008aff;
+    display: block;
+    margin-bottom: 10px; }
+  #page_404 .upper_text {
+    text-transform: uppercase; }
+  #page_404 .sub_text_404 {
+    margin-bottom: 30px; }
+
+.beauty_btn {
+  display: inline-block;
+  position: relative;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  outline: none !important;
+  padding: 10px 20px;
+  border-radius: 30px;
+  min-width: 140px;
+  max-width: 100%;
+  text-align: center;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  background: none; }
+
+.beauty_btn:hover {
+  background: #fff;
+  color: #005cb9; }
+
+@media (max-width: 520px) {
+  #page_404 .logo_big {
+    width: 207px;
+    left: -37px; }
+
+  #page_404 .inner {
+    padding-top: 115px; }
+
+  #page_404 .box_404 {
+    clip-path: polygon(169px 0, 100% 0, 100% 100%, 0 100%, 0 71px); }
+
+  #page_404 .weather_now {
+    top: 98px; } }
+/*END 520px*/
+@media (max-width: 460px) {
+  #page_404 .logo_big {
+    width: 147px;
+    left: 0; }
+
+  #page_404 .inner {
+    padding-top: 0; }
+
+  #page_404 .box_404 {
+    clip-path: polygon(82px 0, 100% 0, 100% 100%, 0 100%, 0 54px); }
+
+  #page_404 .weather_now {
+    top: -17px; }
+
+  #page_404 .sorry_text {
+    font-size: 48px; }
+
+  #page_404 .main_text_404 {
+    margin-top: 40px; } }
+/*END 460px*/
+@media (max-width: 400px) {
+  #page_404 .box_404 {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  #page_404 .main_text_404 {
+    font-size: 146px; } }
+/*END 400px*/
+@media (max-width: 340px) {
+  #page_404 {
+    font-size: 20px;
+    line-height: 30px; }
+
+  #page_404 .box_404 {
+    padding-top: 102px; }
+
+  #page_404 .main_text_404 {
+    margin-top: 8px; } }
+/*END 340px*/
+
+/*# sourceMappingURL=404.css.map */

@@ -1,0 +1,6 @@
+
+    <a href = "/{{currentCountryCode}}/weather/outlook/{{selectedCity}}" ng-class="{'active':$state.current.name=='outlook'}" ng-bind="pageContent.outlook"></a>
+    <a href = "/{{currentCountryCode}}/weather/hour-by-hour3/{{selectedCity}}" ng-class="{'active':$state.current.name=='hour-by-hour'}" ng-bind="pageContent.hourByHour"></a>
+    <a href="/{{currentCountryCode}}/weather/map/{{selectedCity}}" ng-class="{'active':$state.current.name=='map'}" ng-bind="pageContent.temperatureMap"></a>
+    <a href = "/{{currentCountryCode}}/weather/history3/{{selectedCity}}" ng-class="{'active':$state.current.name=='past-weather'}" ng-bind="pageContent.pastWeather"></a>
+    <a href = "/{{currentCountryCode}}/weather/14/{{selectedCity}}" ng-class="{'active':$state.current.name=='fourteen-days'}" ng-bind="pageContent.fourteenDay"></a>

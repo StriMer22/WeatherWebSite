@@ -1,0 +1,31 @@
+<div class="page-nav" ng-if="$state.params.day!='front-page'">
+    <nav class="pn-top" >
+        <ul>
+            <li style="display: none" class="mob_weater"><a onclick="blockUrl(event)">{{$state.params.day}}</a></li>
+            <li><a href="/{{currentCountryCode}}/weather/outlook/{{selectedCity}}" ng-class="{'active':$state.current.name=='outlook'}" ng-bind="pageContent.outlook"></a></li>
+            <li><a href="/{{currentCountryCode}}/weather/today/{{selectedCity}}" ng-class="{'active':$state.current.name=='today'}" ng-bind="pageContent.today"></a></li>
+            <li><a href="/{{currentCountryCode}}/weather/tomorrow/{{selectedCity}}" ng-class="{'active':$state.current.name=='tomorrow'}" ng-bind="pageContent.tomorrow"></a></li>
+            <li><a href="/{{currentCountryCode}}/weather/history3/{{selectedCity}}" ng-class="{'active':$state.current.name=='past-weather'||$state.current.name=='past-weather1'}" ng-bind="pageContent.pastWeather"></a></li>
+            <li><a href="/{{currentCountryCode}}/weather/map/{{selectedCity}}" ng-class="{'active':$state.current.name=='map'}" ng-bind="pageContent.temperatureMap"></a></li>
+        </ul>
+
+    </nav>
+    <nav class="pn-bot">
+        <ul>
+            <li><a href="/{{currentCountryCode}}/weather/3/{{selectedCity}}" ng-class="{'active':$state.current.name=='three-days'}" ng-bind="pageContent.threeDay"></a></li>
+            <li><a href="/{{currentCountryCode}}/weather/5/{{selectedCity}}" ng-class="{'active':$state.current.name=='five-days'}" ng-bind="pageContent.fiveDay"></a></li>
+            <li><a href="/{{currentCountryCode}}/weather/7/{{selectedCity}}" ng-class="{'active':$state.current.name=='seven-days'}" ng-bind="pageContent.sevenDay"></a></li>
+            <li><a href="/{{currentCountryCode}}/weather/10/{{selectedCity}}" ng-class="{'active':$state.current.name=='ten-days'}" ng-bind="pageContent.tenDay"></a></li>
+            <li><a href="/{{currentCountryCode}}/weather/14/{{selectedCity}}" ng-class="{'active':$state.current.name=='fourteen-days'}" ng-bind="pageContent.fourteenDay"></a></li>
+            <li><a href="/{{currentCountryCode}}/weather/hour-by-hour3/{{selectedCity}}" ng-class="{'active':$state.current.name=='hour-by-hour'||$state.current.name=='hour-by-hour1'}" ng-bind="pageContent.hourByHour"></a></li>
+        </ul>
+    </nav>
+</div><!-- end page-nav -->
+
+<div ui-view></div>
+<script>
+   function blockUrl(event) {
+        event.preventDefault()
+        activeMenu();
+   }
+</script>
